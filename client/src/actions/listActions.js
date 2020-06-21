@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-fetch' 
+import fetch from 'isomorphic-fetch'
 
 export const createList = (formValues) => {
   console.log('C');
@@ -11,7 +11,7 @@ export const createList = (formValues) => {
   }
 
   return dispatch => {
-    fetch (`/api/lists`, data)
+    fetch(`https://quotesgalore.herokuapp.com/api/lists`, data)
       .then(response => response.json())
       .then(list => {
         console.log('D');
@@ -25,7 +25,7 @@ export const createList = (formValues) => {
   export const fetchLists = () => {
     return (dispatch) => {
       dispatch({ type: 'LOADING_LISTS' })
-      return fetch('/api/lists')
+      return fetch('https://quotesgalore.herokuapp.com/api/lists')
       .then(response => {
         return response.json()
       }).then(lists => {
@@ -44,7 +44,7 @@ export const createList = (formValues) => {
   }
 
   return dispatch => {
-    fetch (`/api/lists/${id}`, data)
+    fetch(`https://quotesgalore.herokuapp.com/api/lists/${id}`, data)
     .then(response => {
       return response.json()
     }).then (list => {
@@ -58,7 +58,7 @@ export const createList = (formValues) => {
 
 export const deleteList = list => {
   return dispatch => {
-    fetch ('/api/lists/' + list.id, {
+    fetch('https://quotesgalore.herokuapp.com/api/lists/' + list.id, {
             method: "DELETE",
             headers: {
             'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ export const addQuoteToListFavorites = (selectedQuote, list) => {
   }
 
   return dispatch => {
-    fetch (`/api/lists/${id}/add_to_favorites`, data)
+    fetch (`https://quotesgalore.herokuapp.com/api/lists/${id}/add_to_favorites`, data)
       .then(response => response.json())
       .then(quotes => dispatch({
         type: 'ADD_TO_FAVORITES',
@@ -99,7 +99,7 @@ export const removeQuoteFromListFavorites = (selectedQuote, list) => {
   }
 
   return dispatch => {
-    fetch (`/api/lists/${id}/remove_from_favorites`, data)
+    fetch(`https://quotesgalore.herokuapp.com/api/lists/${id}/remove_from_favorites`, data)
       .then(response => response.json())
       .then(quotes => dispatch({
         type: 'REMOVE_FROM_FAVORITES',
