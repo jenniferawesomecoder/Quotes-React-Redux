@@ -14,19 +14,19 @@ import ListsContainer from './containers/ListsContainer'
 const App = () => (
 //
     <Router history={history}>
-    
+
      <Route>
       <Nav />
      </Route>
       <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/new" component={ListCreate} />
-        <Route exact path="/lists" component={ListsContainer} />
-        <Route exact path="/all" component={QuotesContainer}/>
-        <Route exact path="/favorites" component={FavoritesContainer}/>
+        <Route exact path="/Quotes-React-Redux/" component={Home}/>
+        <Route exact path="/Quotes-React-Redux/new" component={ListCreate} />
+        <Route exact path="/Quotes-React-Redux/lists" component={ListsContainer} />
+        <Route exact path="/Quotes-React-Redux/all" component={QuotesContainer}/>
+        <Route exact path="/Quotes-React-Redux/favorites" component={FavoritesContainer}/>
       </Switch>
-  </Router>  
-  
+  </Router>
+
 );
 
 export default App;
