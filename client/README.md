@@ -3,7 +3,7 @@ cd client
 Install required dependencies
 
 
-Clone, install, and start the Rails API server. Follow instructions detailed in the README of the link above.
+Clone, install, and start the Rails API server.
 
 Start your React server
 
