@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b8ac49125dd8f81efa8a0fd22a0b928",
+    "revision": "13af8a683f1f4a78e7acab22d3640b3c",
     "url": "/Quotes-React-Redux/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Quotes-React-Redux/static/js/2.55917f7f.chunk.js"
   },
   {
-    "revision": "9f3d0fc34bf56831e45a",
-    "url": "/Quotes-React-Redux/static/js/main.fee5ba86.chunk.js"
+    "revision": "48a0e46e2740970ce5ae",
+    "url": "/Quotes-React-Redux/static/js/main.21642673.chunk.js"
   },
   {
     "revision": "081eb0b7662915bd3301",
